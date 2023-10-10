@@ -2,18 +2,24 @@
 // Opdracht 1a
 // Schrijf een script dat voor iedere student in de array de score (het getal uit de property "score") in de terminal print
 
-const scores = [
-    {name: 'Max', score: 83, grade: null},
-    {name: 'David', score: 77, grade: null},
-    {name: 'Khalid', score: 92, grade: null},
-    {name: 'Rianne', score: 66, grade: null}
-];
+// const scores = [
+//     {name: 'Max', score: 83, grade: null},
+//     {name: 'David', score: 77, grade: null},
+//     {name: 'Khalid', score: 92, grade: null},
+//     {name: 'Rianne', score: 66, grade: null}
+// ];
+//
+// for (let i = 0; i < scores.length; i++) {
+//     console.log(scores[i].name + "'s score is: " + scores[i].score);
+// }
+//
+// console.log(squares);
 
 // Verwachtte uitkomsten:
 // 83
 // 77
 // 92
-// 66ç
+// 66
 // ==========================================
 
 
@@ -32,6 +38,34 @@ const scores = [
 // D
 // ==========================================
 
+// const scores = [
+//     {name: 'Max', score: 83, grade: null},
+//     {name: 'David', score: 77, grade: null},
+//     {name: 'Khalid', score: 92, grade: null},
+//     {name: 'Rianne', score: 66, grade: null}
+// ];
+//
+// for (let i = 0; i < scores.length; i++) {
+//     if (scores[i].score < 60){
+//         console.log(scores[i].name + "'s score is: F");
+//         continue;
+//     }
+//     if (scores[i].score < 70){
+//         console.log(scores[i].name + "'s score is: D");
+//         continue;
+//     }
+//     if (scores[i].score < 80){
+//         console.log(scores[i].name + "'s score is: C");
+//         continue;
+//     }
+//     if (scores[i].score < 90){
+//         console.log(scores[i].name + "'s score is: B");
+//         continue;
+//     }
+//     else {console.log(scores[i].name + "'s score is: A");
+//         continue;
+//     }
+// }
 
 
 
@@ -48,8 +82,45 @@ const scores = [
 //  { name: 'Rianne', score: 66, grade: 'D' }
 //  ];
 // ==========================================
+//
 
 
+// const scores = [
+//     {name: 'Max', score: 83, grade: null},
+//     {name: 'David', score: 77, grade: null},
+//     {name: 'Khalid', score: 92, grade: null},
+//     {name: 'Rianne', score: 66, grade: null}
+// ];
+//
+// for (let i = 0; i < scores.length; i++) {
+//     if (scores[i].score < 60){
+//         console.log(scores[i].name + "'s score is: F");
+//         scores[i].grade = "F"
+//         continue;
+//     }
+//     if (scores[i].score < 70){
+//         console.log(scores[i].name + "'s score is: D");
+//         scores[i].grade = "D"
+//         continue;
+//     }
+//     if (scores[i].score < 80){
+//         console.log(scores[i].name + "'s score is: C");
+//         scores[i].grade = "C"
+//         continue;
+//     }
+//     if (scores[i].score < 90){
+//         console.log(scores[i].name + "'s score is: B");
+//         scores[i].grade = "B"
+//         continue;
+//     }
+//     else {console.log(scores[i].name + "'s score is: A");
+//         scores[i].grade = "A"
+//         continue;
+//     }
+// }
+//
+//
+// console.log(scores)
 
 
 
@@ -76,6 +147,13 @@ const NOVIEmployees = [
 // ==========================================
 
 
+// for (let i = 0; i < NOVIEmployees.length; i++) {
+//
+//     const email = NOVIEmployees[i].firstName + "." + NOVIEmployees[i].lastName + "@novi.nl";
+//
+//     console.log("firstName: '" + NOVIEmployees[i].firstName + "', '"+ NOVIEmployees[i].lastName  + "', '"+  "email:" + email);
+// }
+
 
 
 
@@ -84,14 +162,19 @@ const NOVIEmployees = [
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
 // ==========================================
 
-
+// for (let i = 0; i < NOVIEmployees.length; i++) {
+//
+//     const email = NOVIEmployees[i].firstName + "." + NOVIEmployees[i].lastName + "@novi.nl";
+//
+//     console.log("firstName: '" + NOVIEmployees[i].firstName + "', '"+ NOVIEmployees[i].lastName  + "', '"+  "email:" + email.toLowerCase());
+// }
 
 
 // ==========================================
 // Opdracht 3
 // Schrijf een script die de property "neighborhood" (de buurt) invult op basis van de postcode van onze studenten.
 // Tip: is het hier handig om if-else te gebruiken, of is er wellicht een betere manier?
-// 	3513 = Pijlsweerd
+//  3513 = Pijlsweerd
 //  3514 = Vogelenbuurt
 //  3512 = Binnenstad
 //  3531 = Lombok
@@ -99,20 +182,45 @@ const NOVIEmployees = [
 //  3581 = Oudwijk
 //  3583 = Schildersbuurt
 
-const students = [
-    {name: 'Mariska', city: 'Utrecht', zipCode: '3513', neighborhood: null},
-    {name: 'Mehmet', city: 'Utrecht', zipCode: '3514', neighborhood: null},
-    {name: 'Dennis', city: 'Utrecht', zipCode: '3572', neighborhood: null},
-    {name: 'Robin', city: 'Utrecht', zipCode: '3581', neighborhood: null},
-    {name: 'Tanush', city: 'Utrecht', zipCode: '3512', neighborhood: null},
-    {name: 'Florien', city: 'Utrecht', zipCode: '3513', neighborhood: null},
-    {name: 'Larissa', city: 'Utrecht', zipCode: '3583', neighborhood: null},
-    {name: 'Marijn', city: 'Utrecht', zipCode: '3572', neighborhood: null},
-    {name: 'Jan', city: 'Utrecht', zipCode: '3531', neighborhood: null},
-    {name: 'Laura', city: 'Utrecht', zipCode: '3531', neighborhood: null},
-    {name: 'Aicha', city: 'Utrecht', zipCode: '3514', neighborhood: null},
-    {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
-];
+
+
+// const students = [
+//     {name: 'Mariska', city: 'Utrecht', zipCode: '3513', neighborhood: null},
+//     {name: 'Mehmet', city: 'Utrecht', zipCode: '3514', neighborhood: null},
+//     {name: 'Dennis', city: 'Utrecht', zipCode: '3572', neighborhood: null},
+//     {name: 'Robin', city: 'Utrecht', zipCode: '3581', neighborhood: null},
+//     {name: 'Tanush', city: 'Utrecht', zipCode: '3512', neighborhood: null},
+//     {name: 'Florien', city: 'Utrecht', zipCode: '3513', neighborhood: null},
+//     {name: 'Larissa', city: 'Utrecht', zipCode: '3583', neighborhood: null},
+//     {name: 'Marijn', city: 'Utrecht', zipCode: '3572', neighborhood: null},
+//     {name: 'Jan', city: 'Utrecht', zipCode: '3531', neighborhood: null},
+//     {name: 'Laura', city: 'Utrecht', zipCode: '3531', neighborhood: null},
+//     {name: 'Aicha', city: 'Utrecht', zipCode: '3514', neighborhood: null},
+//     {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
+// ];
+//
+//
+// for (let i = 0; i < students.length; i++) {
+//     switch (students[i].zipCode) {
+//         case "3513": students[i].neighborhood = "Pijlsweerd";
+//             break;
+//         case "3514": students[i].neighborhood = "Vogelenbuurt";
+//             break;
+//         case "3512": students[i].neighborhood = "Binnenstad";
+//             break;
+//         case "3531": students[i].neighborhood = "Lombok";
+//             break;
+//         case "3572": students[i].neighborhood = "Wittevrouwen";
+//             break;
+//         case "3581": students[i].neighborhood = "Oudwijk";
+//             break;
+//         case "3583": students[i].neighborhood = "Schildersbuurt";
+//             break;
+//     }
+//     console.log("name: '" + students[i].name + "', city:  '" + students[i].city + "', zipCode: '" + students[i].zipCode + "', neighborhood: '" + students[i].neighborhood + "'");
+// }
+
+
 
 // Verwachte uitkomsten:
 // [
@@ -130,6 +238,3 @@ const students = [
 //     { name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: 'Vogelenbuurt' }
 // ]
 // ==========================================
-
-
-
